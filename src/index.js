@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App'; // 引用了来自 App.js 文件中的 React 组件，并将此组件命名为 App
+import App from './App'; // 引用了来自 App.js 文件中的 React 组件，并将此组件命名为 App
 import Hw from './Hw';
 import './index.css';
 import Photo from './MyFirstComponent';
@@ -12,6 +12,7 @@ ReactDOM.render(
     <Hw />
     <Photo />
     <Photo />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
