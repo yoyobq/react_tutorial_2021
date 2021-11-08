@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Avatar from './Avatar';
 import Hw from './Hw';
 import './index.css';
 import Photo from './MyFirstComponent';
@@ -14,6 +15,7 @@ ReactDOM.render(
     <Photo />
     <Photo />
     <TodoList />
+    <Avatar />
   </React.StrictMode>,
   document.getElementById('root')
 );
