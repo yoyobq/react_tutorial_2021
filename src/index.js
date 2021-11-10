@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import Profile from './MyFirstComponent';
+import Counter from './Counter';
 import './index.css';
-import Profile from './MyFirstComponent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Profile />
+    <Counter />
   </React.StrictMode>,
   document.getElementById('root')
 );
