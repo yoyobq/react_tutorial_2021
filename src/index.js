@@ -1,21 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Avatar from './Avatar';
-import Hw from './Hw';
 import './index.css';
-import Photo from './MyFirstComponent';
+import Profile from './MyFirstComponent';
 import reportWebVitals from './reportWebVitals';
-import TodoList from './TodoList';
-
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* 显示Hw组件 */}
-    <Hw />
-    <Photo />
-    <Photo />
-    <TodoList />
-    <Avatar />
+    <Profile />
   </React.StrictMode>,
   document.getElementById('root')
 );
