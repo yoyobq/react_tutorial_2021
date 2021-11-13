@@ -1,23 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Avatar from './Avatar';
-import Card from './Card';
+// import Avatar from './Avatar';
+// import Card from './Card';
 import './index.css';
-import Profile from './MyFirstComponent';
+import Item from './Item';
+import PackingList from './PackingList';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Profile />
-    <Card>
-      <Avatar
-        size={200}
-        person={{ 
-          name: 'Hedy Lamarr', 
-          imageId: 'yXOvdOSs'
-        }}
+    <PackingList>
+      <Item
+        isPacked={true} 
+        name="Space suit" 
       />
-    </Card>
+      <Item
+        name="Helmet with a golden leaf" 
+      />
+      <Item
+        isPacked={true} 
+        name="Photo of Tam" 
+      />
+    </PackingList>
   </React.StrictMode>,
   document.getElementById('root')
 );
