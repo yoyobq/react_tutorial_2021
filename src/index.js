@@ -4,11 +4,13 @@ import ReactDOM from 'react-dom';
 // import Card from './Card';
 import './index.css';
 import Item from './Item';
+import List from './List';
 import PackingList from './PackingList';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <List />
     <PackingList>
       <Item
         isPacked={true} 
