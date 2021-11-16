@@ -3,27 +3,12 @@ import ReactDOM from 'react-dom';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
-import Item from './Item';
 import List from './List';
-import PackingList from './PackingList';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <List />
-    <PackingList>
-      <Item
-        isPacked={true} 
-        name="Space suit" 
-      />
-      <Item
-        name="Helmet with a golden leaf" 
-      />
-      <Item
-        isPacked={true} 
-        name="Photo of Tam" 
-      />
-    </PackingList>
   </React.StrictMode>,
   document.getElementById('root')
 );

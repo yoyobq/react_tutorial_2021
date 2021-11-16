@@ -1,17 +1,33 @@
-const people = [
-  'Creola Katherine Johnson: mathematician',
-  'Mario José Molina-Pasquel Henríquez: chemist',
-  'Mohammad Abdus Salam: physicist',
-  'Percy Lavon Julian: chemist',
-  'Subrahmanyan Chandrasekhar: astrophysicist'
-];
+import { Fragment } from 'react';
+import { people } from './data.js';
+import { getImageUrl } from './utils.js';
 
-export default function List() {
-  const listItems = people.map(person =>
-    <li>{person}</li>
+function Items(person) {
+  return (
+    <Fragment key={person.id}>
+      <li key={person.id}>
+        <img
+          src={getImageUrl(person)}
+          alt={person.name}
+        />
+        <p>
+          <b>{person.name}:</b>
+          {' ' + person.profession + ' '}
+          known for {person.accomplishment}
+        </p>
+      </li>
+    </Fragment>
   );
+}
 
-  // console.log(listItems);
-
+function List() {
+  const chemists = people.filter(person =>
+    person.profession === 'chemist'
+  );
+  const listItems = chemists.map(person =>
+    Items(person)
+  );
   return <ul>{listItems}</ul>;
 }
+
+export default List;
