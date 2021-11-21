@@ -1,11 +1,11 @@
-function Button() {
+function Button({ message, children }) {
   function handleClick() {
-    alert('You clicked me!');
+    alert(message);
   }
 
   return (
     <button onClick={handleClick}>
-      Click me
+      {children}
     </button>
   );
 }

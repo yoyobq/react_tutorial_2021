@@ -8,7 +8,12 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Button />
+    <Button message="Playing!">
+        Play Movie
+    </Button>
+    <Button message="Uploading!">
+        Upload Image
+    </Button>
   </React.StrictMode>,
   document.getElementById('root')
 );
