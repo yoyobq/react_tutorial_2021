@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Button from './Button';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
-import List from './List';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <List />
+    <Button />
   </React.StrictMode>,
   document.getElementById('root')
 );
