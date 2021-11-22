@@ -1,19 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from './Button';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
-import PlayButton from './PlayButton';
 import reportWebVitals from './reportWebVitals';
-import UploadButton from './UploadButton';
+import ToolBar from './ToolBar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <PlayButton movieName="Kiki's Delivery Service" />
-    <UploadButton />
-    <hr />
-    <Button onClick={() => { alert('hi') }}>Show hi</Button>
+    <ToolBar />
   </React.StrictMode>,
   document.getElementById('root')
 );
