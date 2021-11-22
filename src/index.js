@@ -4,16 +4,16 @@ import Button from './Button';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
+import PlayButton from './PlayButton';
 import reportWebVitals from './reportWebVitals';
+import UploadButton from './UploadButton';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Button message="Playing!">
-        Play Movie
-    </Button>
-    <Button message="Uploading!">
-        Upload Image
-    </Button>
+    <PlayButton movieName="Kiki's Delivery Service" />
+    <UploadButton />
+    <hr />
+    <Button onClick={() => { alert('hi') }}>Show hi</Button>
   </React.StrictMode>,
   document.getElementById('root')
 );
