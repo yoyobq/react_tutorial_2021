@@ -1,22 +1,24 @@
 import './ToolBar.css';
-function Toolbar() {
-  function onClick(e) {
-    e.stopPropagation();
-    alert('Playing!')
-  }
 
+function Toolbar() {
   return (
     <div
       className="tool-bar"
-      onClick={() => {
+      onClickCapture={ () => {
         alert('You clicked on the toolbar!');
       }}
     >
       <span
-        onClick={onClick}
+        onClick={() => alert('Playing!')}
         className="btn"
       >
         Play Movie
+      </span>
+      <span
+        onClick={() => alert('Uploading!')}
+        className="btn"
+      >
+        Upload Image
       </span>
     </div>
   );

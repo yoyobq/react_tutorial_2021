@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom';
 // import Card from './Card';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ToolBar from './ToolBar';
+import Signup from './Signup';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ToolBar />
+    <Signup />
   </React.StrictMode>,
   document.getElementById('root')
 );
