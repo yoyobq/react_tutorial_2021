@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Gallery from './Gallery';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Signup from './Signup';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Signup />
+    <Gallery />
   </React.StrictMode>,
   document.getElementById('root')
 );
