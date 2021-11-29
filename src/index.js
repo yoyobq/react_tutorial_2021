@@ -9,6 +9,8 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <Gallery />
+    <hr />
+    <Gallery />
   </React.StrictMode>,
   document.getElementById('root')
 );
