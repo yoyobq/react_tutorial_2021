@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Clock from './Clock';
+import Form from './Form';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Clock />
+    <Form />
   </React.StrictMode>,
   document.getElementById('root')
 );
