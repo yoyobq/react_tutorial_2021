@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Gallery from './Gallery';
+import Clock from './Clock';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
@@ -8,9 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Gallery />
-    <hr />
-    <Gallery />
+    <Clock />
   </React.StrictMode>,
   document.getElementById('root')
 );
