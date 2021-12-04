@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from './Form';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
+import NumCounter from './NumCounter';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Form />
+    <NumCounter />
   </React.StrictMode>,
   document.getElementById('root')
 );
