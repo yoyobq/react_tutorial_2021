@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './MovingDot.css';
 
 function MovingDot() {
-  // eslint-disable-next-line no-unused-vars
   const [position, setPosition] = useState({
     x: 0,
     y: 0
@@ -10,8 +9,11 @@ function MovingDot() {
   return (
     <div
       onPointerMove={e => {
-          position.x = e.clientX;
-          position.y = e.clientY;
+        const newPosition = {
+          x: e.clientX,
+          y: e.clientY
+        };
+        setPosition(newPosition);
       }}
       className="board">
       <div 
