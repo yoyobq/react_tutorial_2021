@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
-import NumCounter from './NumCounter';
+import MovingDot from './MovingDot';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <NumCounter />
+    <MovingDot />
   </React.StrictMode>,
   document.getElementById('root')
 );
