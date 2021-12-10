@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import EmailForm from './EmailForm';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
-import MovingDot from './MovingDot';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MovingDot />
+    <EmailForm />
   </React.StrictMode>,
   document.getElementById('root')
 );
