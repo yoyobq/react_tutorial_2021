@@ -1,16 +1,32 @@
-import { useState } from 'react';
+// import { useState } from 'react';
+import { useImmer } from 'use-immer';
 
 function EmailForm() {
-  const [person, setPerson] = useState({
+  // const [person, setPerson] = useState({
+  const [person, updatePerson] = useImmer({
     firstName: 'Barbara',
     lastName: 'Hepworth',
     email: 'bhepworth@sculpture.com'
   });
 
-  function handleChange(e) {
-    setPerson({
-      ...person,
-      [e.target.name]: e.target.value
+  function handleFirstNameChange(e) {
+    // person.firstName = e.target.value;
+    updatePerson(draft => {
+      draft.firstName = e.target.value;
+    });
+  }
+
+  function handleLastNameChange(e) {
+    // person.lastName = e.target.value;
+    updatePerson(draft => {
+      draft.lastName = e.target.value;
+    });
+  }
+
+  function handleEmailChange(e) {
+    // person.email = e.target.value;
+    updatePerson(draft => {
+      draft.email = e.target.value;
     });
   }
 
@@ -19,25 +35,22 @@ function EmailForm() {
       <label>
         First name:
         <input
-          name="firstName"
           value={person.firstName}
-          onChange={handleChange}
+          onChange={handleFirstNameChange}
         />
       </label>
       <label>
         Last name:
         <input
-          name="lastName"
           value={person.lastName}
-          onChange={handleChange}
+          onChange={handleLastNameChange}
         />
       </label>
       <label>
         Email:
         <input
-          name="email"
           value={person.email}
-          onChange={handleChange}
+          onChange={handleEmailChange}
         />
       </label>
       <p>
