@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ArtistList from './ArtistList';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import ShapeEditor from './ShapeEditor';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ArtistList />
+    <ShapeEditor />
   </React.StrictMode>,
   document.getElementById('root')
 );
