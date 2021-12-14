@@ -9,24 +9,9 @@ function EmailForm() {
     email: 'bhepworth@sculpture.com'
   });
 
-  function handleFirstNameChange(e) {
-    // person.firstName = e.target.value;
+  function handleChange(e) {
     updatePerson(draft => {
-      draft.firstName = e.target.value;
-    });
-  }
-
-  function handleLastNameChange(e) {
-    // person.lastName = e.target.value;
-    updatePerson(draft => {
-      draft.lastName = e.target.value;
-    });
-  }
-
-  function handleEmailChange(e) {
-    // person.email = e.target.value;
-    updatePerson(draft => {
-      draft.email = e.target.value;
+      draft[e.target.name] = e.target.value
     });
   }
 
@@ -35,22 +20,25 @@ function EmailForm() {
       <label>
         First name:
         <input
+          name="firstName"
           value={person.firstName}
-          onChange={handleFirstNameChange}
+          onChange={handleChange}
         />
       </label>
       <label>
         Last name:
         <input
+          name="lastName"
           value={person.lastName}
-          onChange={handleLastNameChange}
+          onChange={handleChange}
         />
       </label>
       <label>
         Email:
         <input
+          name="email"
           value={person.email}
-          onChange={handleEmailChange}
+          onChange={handleChange}
         />
       </label>
       <p>
