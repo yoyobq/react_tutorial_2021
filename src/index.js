@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CounterList from './CounterList';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import SculptorList from './SculptorList';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CounterList />
+    <SculptorList />
   </React.StrictMode>,
   document.getElementById('root')
 );
