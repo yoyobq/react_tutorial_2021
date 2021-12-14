@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom';
 // import Card from './Card';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import SculptorList from './SculptorList';
+import ReverseList from './ReverseList';
 
 ReactDOM.render(
   <React.StrictMode>
-    <SculptorList />
+    <ReverseList />
   </React.StrictMode>,
   document.getElementById('root')
 );
