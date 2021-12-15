@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useImmer } from 'use-immer';
 
 const initialList = [
   { id: 0, title: 'Big Bellies', seen: false },
@@ -7,29 +7,29 @@ const initialList = [
 ];
 
 function BucketList() {
-  const [myList, setMyList] = useState(initialList);
-  const [yourList, setYourList] = useState(
+  const [myList, updateMyList] = useImmer(
+    initialList
+  );
+  const [yourList, updateYourList] = useImmer(
     initialList
   );
 
   function handleToggleMyList(artworkId, nextSeen) {
-    setMyList(myList.map(a => {
-      if (a.id === artworkId) {
-        // 为数组中被改变的对象创建新副本
-        return { ...a, seen: nextSeen };
-      } 
-      return a;
-    }));
+    updateMyList(draft => {
+      const artwork = draft.find(a =>
+        a.id === artworkId
+      );
+      artwork.seen = nextSeen;
+    });
   };
 
   function handleToggleYourList(artworkId, nextSeen) {
-    setYourList(yourList.map(a => {
-      if (a.id === artworkId) {
-        // 为数组中被改变的对象创建新副本
-        return { ...a, seen: nextSeen };
-      } 
-      return a;
-    }));
+    updateYourList(draft => {
+      const artwork = draft.find(a =>
+        a.id === artworkId
+      );
+      artwork.seen = nextSeen;
+    });
   };
 
   return (
