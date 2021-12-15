@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import BucketList from './BucketList';
 // import Avatar from './Avatar';
 // import Card from './Card';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ReverseList from './ReverseList';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ReverseList />
+    <BucketList />
   </React.StrictMode>,
   document.getElementById('root')
 );
